@@ -30,6 +30,7 @@ public class CharController : MonoBehaviour
         else if (Input.GetKey(KeyCode.Space))
         {
             speed = 0;
+            //
         }
         
         else
