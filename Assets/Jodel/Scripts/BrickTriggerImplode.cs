@@ -1,35 +1,46 @@
 using System.Collections;
+
 using System.Collections.Generic;
+
 using UnityEngine;
 
 
 public class BrickTriggerImplode : MonoBehaviour
+
 {
 
-    private GameObject brickArrayT;
+private GameObject brickArrayT;
 
 
-    // Use this for initialization
+// Use this for initialization
 
-    void Start()
-    {
-    brickArrayT = GameObject.FindGameObjectWithTag("BrickArrayTag");
+void Start()
 
-    }
+{
 
-    // Update is called once per frame
+brickArrayT = GameObject.FindGameObjectWithTag("BrickArrayTag");
 
-    void Update()
-    {
+}
 
 
-    }
+// Update is called once per frame
 
-    public void OnMouseDown()
-    {
+void Update()
 
-    brickArrayT.GetComponent<Animator>().Play("implode");
+{
 
-    }
+
+}
+
+
+public void OnMouseDown()
+
+{
+
+brickArrayT.GetComponent<Animator>().Play("implode");
+
+
+}
+
 
 }
